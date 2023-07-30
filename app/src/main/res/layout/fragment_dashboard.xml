@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2b2b2b">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search for users"
+        android:iconifiedByDefault="false"
+        android:background="#353535"
+        android:searchIcon="@android:drawable/ic_menu_search"
+        android:closeIcon="@android:drawable/ic_menu_close_clear_cancel"
+        android:textColorHighlight="#FFFFFF"
+        android:searchHintIcon="@android:drawable/ic_menu_search"
+        android:padding="8dp"
+        android:text="Message a new user"
+        android:textColorHint="#A0A0A0"
+        android:textColor="#FFFFFF" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchResultsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:background="#2b2b2b"
+        android:divider="#353535"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="No search results found."
+        android:gravity="center"
+        android:textColor="#A0A0A0"
+        android:visibility="gone"
+        android:id="@+id/noResultsTextView" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

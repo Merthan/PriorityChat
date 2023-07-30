@@ -1,0 +1,87 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory
+        android:title="Priority">
+
+    </PreferenceCategory>
+
+    <!-- Global Priority Adjustment -->
+    <ListPreference
+        android:key="global_priority_key"
+        android:title="Adjust Global Priority"
+        android:summary="Global priority set to %s"
+        android:entries="@array/priority_values"
+        android:entryValues="@array/priority_values"
+        app:defaultValue="6"
+         />
+
+    <!-- Vibrate Starting from Priority -->
+    <ListPreference
+        android:key="vibrate_priority_key"
+        android:title="Vibrate Starting from Priority"
+        android:summary="Vibrate starting from priority %s"
+        android:entries="@array/priority_values"
+        android:entryValues="@array/priority_values"
+        app:defaultValue="7"
+
+
+        />
+
+    <!-- Ring Starting from Priority -->
+    <ListPreference
+        android:key="ring_priority_key"
+        android:title="Ring Starting from Priority"
+        android:summary="Ring starting from priority %s"
+        app:defaultValue="9"
+        android:entries="@array/priority_values"
+        android:entryValues="@array/priority_values"
+         />
+
+    <!-- Theme Color Option -->
+
+
+
+
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <Preference
+            app:key="signature"
+            app:title="@string/signature_title"
+            android:summary="Currently on Holiday"
+             />
+
+        <Preference
+            app:defaultValue="reply"
+            app:key="reply"
+            app:title="@string/reply_title"
+            app:summary="Reply and rate priority"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Design">
+
+        <SwitchPreference
+            android:key="theme_color_key"
+            android:title="Dark theme"
+            android:summary="Enable dark theme"
+            app:defaultValue="true"
+            />
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Sync messages" />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

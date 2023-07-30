@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "322083076776",
+    "project_id": "chatpriority",
+    "storage_bucket": "chatpriority.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322083076776:android:e147a7e8cd27419ac1a09d",
+        "android_client_info": {
+          "package_name": "com.me.prioritychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322083076776-r6clsh3f253p596c0i41utvrrkdsser3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTi4GtPcF78yMBKDOqiPlFJIgyVeKUzYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322083076776-r6clsh3f253p596c0i41utvrrkdsser3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

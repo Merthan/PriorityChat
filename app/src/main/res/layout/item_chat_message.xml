@@ -1,0 +1,22 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/messageFrame"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+
+
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+
+        android:background="@drawable/bg_chat_message_received"
+        android:padding="8dp" />
+
+</LinearLayout>
